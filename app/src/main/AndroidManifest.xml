@@ -14,8 +14,13 @@
         android:theme="@style/Theme.MVVMApp"
         tools:targetApi="31">
         <activity
+            android:name=".AddNoteActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
